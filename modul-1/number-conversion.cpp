@@ -1,22 +1,18 @@
 #include <iostream>
-#include <cmath>
 #include <string>
+#include <cmath>
 
 using namespace std;
 
-int hexCharToDecimal(char hexChar)
+int charToDecimal(char karakter)
 {
-    if (hexChar >= '0' && hexChar <= '9')
+    if (karakter >= '0' && karakter <= '9')
     {
-        return hexChar - '0';
+        return karakter - '0';
     }
-    else if (hexChar >= 'A' && hexChar <= 'F')
+    else if (karakter >= 'A' && karakter <= 'F')
     {
-        return hexChar - 'A' + 10;
-    }
-    else if (hexChar >= 'a' && hexChar <= 'f')
-    {
-        return hexChar - 'a' + 10;
+        return karakter - 'A' + 10;
     }
     else
     {
@@ -24,40 +20,54 @@ int hexCharToDecimal(char hexChar)
     }
 }
 
-int convertBase(const string &number, int baseFrom, int baseTo)
+char decimalToChar(int x)
 {
-    int decimalNumber = 0;
-
-    for (int i = number.length() - 1; i >= 0; i--)
+    if (x > 9)
     {
-        int digit = hexCharToDecimal(number[i]);
-        decimalNumber += digit * pow(baseFrom, number.length() - 1 - i);
+        return (char)('A' + x - 10);
+    }
+    else
+    {
+        return (char)(x + '0');
+    }
+}
+
+void convertNumber(const string &num, int basisAwal, int basisAkhir)
+{
+    int decimal = 0;
+    int len = num.length();
+    for (int i = len - 1; i >= 0; i--)
+    {
+        int digit = charToDecimal(num[i]);
+        decimal += digit * pow(basisAwal, len - 1 - i);
     }
 
-    int result = 0;
-    int multiplier = 1;
+    string result = "";
 
-    while (decimalNumber > 0)
+    while (decimal > 0)
     {
-        int digit = decimalNumber % baseTo;
-        result += digit * multiplier;
-        multiplier *= 10;
-        decimalNumber /= baseTo;
+        int digit = decimal % basisAkhir;
+        result.push_back(decimalToChar(digit));
+        decimal /= basisAkhir;
     }
 
-    return result;
+    for (int i = result.length() - 1; i >= 0; i--)
+    {
+        cout << result[i];
+    }
+
+    cout << endl;
 }
 
 int main()
 {
-    string number;
-    int baseFrom, baseTo;
+    string num;
+    int basisAwal, basisAkhir;
 
-    cin >> number;
-    cin >> baseFrom;
-    cin >> baseTo;
-    int result = convertBase(number, baseFrom, baseTo);
-    cout << result << endl;
+    cin >> num;
+    cin >> basisAwal;
+    cin >> basisAkhir;
+    convertNumber(num, basisAwal, basisAkhir);
 
     return 0;
 }
