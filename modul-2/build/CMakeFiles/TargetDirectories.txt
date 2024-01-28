@@ -1,3 +1,5 @@
 /home/elkarpeto/magang/magang-IRIS/modul-2/build/CMakeFiles/rebuild_cache.dir
 /home/elkarpeto/magang/magang-IRIS/modul-2/build/CMakeFiles/edit_cache.dir
+/home/elkarpeto/magang/magang-IRIS/modul-2/build/CMakeFiles/tugas2.dir
+/home/elkarpeto/magang/magang-IRIS/modul-2/build/CMakeFiles/tugas1.dir
 /home/elkarpeto/magang/magang-IRIS/modul-2/build/CMakeFiles/coba.dir

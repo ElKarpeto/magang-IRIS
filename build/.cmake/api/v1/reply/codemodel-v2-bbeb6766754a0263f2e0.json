@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "modulopencv",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "coba::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-coba-Debug-90382c0aa50334228332.json",
+					"name" : "coba",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tugas1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tugas1-Debug-21573177021a674feee0.json",
+					"name" : "tugas1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tugas2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tugas2-Debug-e8ccb0eb6479a230d96a.json",
+					"name" : "tugas2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/elkarpeto/magang/magang-IRIS/build",
+		"source" : "/home/elkarpeto/magang/magang-IRIS/modul-2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/elkarpeto/magang/magang-IRIS/build",
+  "command": "/usr/bin/g++   -I/home/elkarpeto/magang/magang-IRIS/modul-2/include -isystem /usr/local/include/opencv4  -g   -std=c++17 -o CMakeFiles/tugas2.dir/src/tugas-2.cpp.o -c /home/elkarpeto/magang/magang-IRIS/modul-2/src/tugas-2.cpp",
+  "file": "/home/elkarpeto/magang/magang-IRIS/modul-2/src/tugas-2.cpp"
+},
+{
+  "directory": "/home/elkarpeto/magang/magang-IRIS/build",
+  "command": "/usr/bin/g++   -I/home/elkarpeto/magang/magang-IRIS/modul-2/include -isystem /usr/local/include/opencv4  -g   -std=c++17 -o CMakeFiles/tugas1.dir/src/tugas-1.cpp.o -c /home/elkarpeto/magang/magang-IRIS/modul-2/src/tugas-1.cpp",
+  "file": "/home/elkarpeto/magang/magang-IRIS/modul-2/src/tugas-1.cpp"
+},
+{
+  "directory": "/home/elkarpeto/magang/magang-IRIS/build",
+  "command": "/usr/bin/g++   -I/home/elkarpeto/magang/magang-IRIS/modul-2/include -isystem /usr/local/include/opencv4  -g   -std=c++17 -o CMakeFiles/coba.dir/src/main.cpp.o -c /home/elkarpeto/magang/magang-IRIS/modul-2/src/main.cpp",
+  "file": "/home/elkarpeto/magang/magang-IRIS/modul-2/src/main.cpp"
+}
+]

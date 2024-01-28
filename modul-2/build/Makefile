@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tugas2
+
+# Build rule for target.
+tugas2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tugas2
+.PHONY : tugas2
+
+# fast build rule for target.
+tugas2/fast:
+	$(MAKE) -f CMakeFiles/tugas2.dir/build.make CMakeFiles/tugas2.dir/build
+.PHONY : tugas2/fast
+
+#=============================================================================
+# Target rules for targets named tugas1
+
+# Build rule for target.
+tugas1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tugas1
+.PHONY : tugas1
+
+# fast build rule for target.
+tugas1/fast:
+	$(MAKE) -f CMakeFiles/tugas1.dir/build.make CMakeFiles/tugas1.dir/build
+.PHONY : tugas1/fast
+
+#=============================================================================
 # Target rules for targets named coba
 
 # Build rule for target.
@@ -150,6 +176,60 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/coba.dir/build.make CMakeFiles/coba.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/tugas-1.o: src/tugas-1.cpp.o
+
+.PHONY : src/tugas-1.o
+
+# target to build an object file
+src/tugas-1.cpp.o:
+	$(MAKE) -f CMakeFiles/tugas1.dir/build.make CMakeFiles/tugas1.dir/src/tugas-1.cpp.o
+.PHONY : src/tugas-1.cpp.o
+
+src/tugas-1.i: src/tugas-1.cpp.i
+
+.PHONY : src/tugas-1.i
+
+# target to preprocess a source file
+src/tugas-1.cpp.i:
+	$(MAKE) -f CMakeFiles/tugas1.dir/build.make CMakeFiles/tugas1.dir/src/tugas-1.cpp.i
+.PHONY : src/tugas-1.cpp.i
+
+src/tugas-1.s: src/tugas-1.cpp.s
+
+.PHONY : src/tugas-1.s
+
+# target to generate assembly for a file
+src/tugas-1.cpp.s:
+	$(MAKE) -f CMakeFiles/tugas1.dir/build.make CMakeFiles/tugas1.dir/src/tugas-1.cpp.s
+.PHONY : src/tugas-1.cpp.s
+
+src/tugas-2.o: src/tugas-2.cpp.o
+
+.PHONY : src/tugas-2.o
+
+# target to build an object file
+src/tugas-2.cpp.o:
+	$(MAKE) -f CMakeFiles/tugas2.dir/build.make CMakeFiles/tugas2.dir/src/tugas-2.cpp.o
+.PHONY : src/tugas-2.cpp.o
+
+src/tugas-2.i: src/tugas-2.cpp.i
+
+.PHONY : src/tugas-2.i
+
+# target to preprocess a source file
+src/tugas-2.cpp.i:
+	$(MAKE) -f CMakeFiles/tugas2.dir/build.make CMakeFiles/tugas2.dir/src/tugas-2.cpp.i
+.PHONY : src/tugas-2.cpp.i
+
+src/tugas-2.s: src/tugas-2.cpp.s
+
+.PHONY : src/tugas-2.s
+
+# target to generate assembly for a file
+src/tugas-2.cpp.s:
+	$(MAKE) -f CMakeFiles/tugas2.dir/build.make CMakeFiles/tugas2.dir/src/tugas-2.cpp.s
+.PHONY : src/tugas-2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +238,18 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... tugas2"
+	@echo "... tugas1"
 	@echo "... coba"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/tugas-1.o"
+	@echo "... src/tugas-1.i"
+	@echo "... src/tugas-1.s"
+	@echo "... src/tugas-2.o"
+	@echo "... src/tugas-2.i"
+	@echo "... src/tugas-2.s"
 .PHONY : help
 
 
