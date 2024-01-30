@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tugas3
+
+# Build rule for target.
+tugas3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tugas3
+.PHONY : tugas3
+
+# fast build rule for target.
+tugas3/fast:
+	$(MAKE) -f CMakeFiles/tugas3.dir/build.make CMakeFiles/tugas3.dir/build
+.PHONY : tugas3/fast
+
+#=============================================================================
 # Target rules for targets named tugas2
 
 # Build rule for target.
@@ -230,6 +243,33 @@ src/tugas-2.cpp.s:
 	$(MAKE) -f CMakeFiles/tugas2.dir/build.make CMakeFiles/tugas2.dir/src/tugas-2.cpp.s
 .PHONY : src/tugas-2.cpp.s
 
+src/tugas-3.o: src/tugas-3.cpp.o
+
+.PHONY : src/tugas-3.o
+
+# target to build an object file
+src/tugas-3.cpp.o:
+	$(MAKE) -f CMakeFiles/tugas3.dir/build.make CMakeFiles/tugas3.dir/src/tugas-3.cpp.o
+.PHONY : src/tugas-3.cpp.o
+
+src/tugas-3.i: src/tugas-3.cpp.i
+
+.PHONY : src/tugas-3.i
+
+# target to preprocess a source file
+src/tugas-3.cpp.i:
+	$(MAKE) -f CMakeFiles/tugas3.dir/build.make CMakeFiles/tugas3.dir/src/tugas-3.cpp.i
+.PHONY : src/tugas-3.cpp.i
+
+src/tugas-3.s: src/tugas-3.cpp.s
+
+.PHONY : src/tugas-3.s
+
+# target to generate assembly for a file
+src/tugas-3.cpp.s:
+	$(MAKE) -f CMakeFiles/tugas3.dir/build.make CMakeFiles/tugas3.dir/src/tugas-3.cpp.s
+.PHONY : src/tugas-3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,6 +278,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... tugas3"
 	@echo "... tugas2"
 	@echo "... tugas1"
 	@echo "... coba"
@@ -250,6 +291,9 @@ help:
 	@echo "... src/tugas-2.o"
 	@echo "... src/tugas-2.i"
 	@echo "... src/tugas-2.s"
+	@echo "... src/tugas-3.o"
+	@echo "... src/tugas-3.i"
+	@echo "... src/tugas-3.s"
 .PHONY : help
 
 

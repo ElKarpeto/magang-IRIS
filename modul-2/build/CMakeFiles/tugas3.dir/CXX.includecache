@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/elkarpeto/magang/magang-IRIS/modul-2/src/main.cpp
+/home/elkarpeto/magang/magang-IRIS/modul-2/src/tugas-3.cpp
 iostream
 -
 opencv2/opencv.hpp

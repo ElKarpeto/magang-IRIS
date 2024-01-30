@@ -16,7 +16,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -33,7 +34,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -58,6 +60,13 @@
 					"id" : "tugas2::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-tugas2-Debug-e8ccb0eb6479a230d96a.json",
 					"name" : "tugas2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tugas3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tugas3-Debug-14b562b3bc0fb4bc3854.json",
+					"name" : "tugas3",
 					"projectIndex" : 0
 				}
 			]

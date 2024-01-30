@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/elkarpeto/magang/magang-IRIS/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/tugas3.dir/all
 all: CMakeFiles/tugas2.dir/all
 all: CMakeFiles/tugas1.dir/all
 all: CMakeFiles/coba.dir/all
@@ -65,11 +66,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/tugas3.dir/clean
 clean: CMakeFiles/tugas2.dir/clean
 clean: CMakeFiles/tugas1.dir/clean
 clean: CMakeFiles/coba.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tugas3.dir
+
+# All Build rule for target.
+CMakeFiles/tugas3.dir/all:
+	$(MAKE) -f CMakeFiles/tugas3.dir/build.make CMakeFiles/tugas3.dir/depend
+	$(MAKE) -f CMakeFiles/tugas3.dir/build.make CMakeFiles/tugas3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elkarpeto/magang/magang-IRIS/build/CMakeFiles --progress-num=7,8 "Built target tugas3"
+.PHONY : CMakeFiles/tugas3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tugas3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elkarpeto/magang/magang-IRIS/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tugas3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elkarpeto/magang/magang-IRIS/build/CMakeFiles 0
+.PHONY : CMakeFiles/tugas3.dir/rule
+
+# Convenience name for target.
+tugas3: CMakeFiles/tugas3.dir/rule
+
+.PHONY : tugas3
+
+# clean rule for target.
+CMakeFiles/tugas3.dir/clean:
+	$(MAKE) -f CMakeFiles/tugas3.dir/build.make CMakeFiles/tugas3.dir/clean
+.PHONY : CMakeFiles/tugas3.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tugas2.dir

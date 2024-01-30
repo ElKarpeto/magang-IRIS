@@ -24,3 +24,8 @@ target_link_libraries(tugas1 ${OpenCV_LIBS})
 set(SOURCES src/tugas-2.cpp)
 add_executable(tugas2 src/tugas-2.cpp)
 target_link_libraries(tugas2 ${OpenCV_LIBS})
+
+# tugas 3
+set(SOURCES src/tugas-3.cpp)
+add_executable(tugas3 src/tugas-3.cpp)
+target_link_libraries(tugas3 ${OpenCV_LIBS})

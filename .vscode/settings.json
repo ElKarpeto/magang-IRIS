@@ -1,3 +1,7 @@
 {
-    "cmake.sourceDirectory": "/home/elkarpeto/magang/magang-IRIS/modul-2"
+    "cmake.sourceDirectory": "/home/elkarpeto/magang/magang-IRIS/modul-2",
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    }
 }
